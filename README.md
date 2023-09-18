@@ -1,35 +1,15 @@
 # vite-vue-jest-sample
 
-This template should help get you started developing with Vue 3 in Vite.
+## 概要
 
-## Recommended IDE Setup
+Vite×VueプロジェクトにJest、Vue Test Utilsを導入し、Vueコンポーネントに対するテストが行える環境を構築するサンプルコード。
 
-[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur) + [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin).
+## テスト実行手順
 
-## Customize configuration
+```bash
+# テストを実行
+npm run test
 
-See [Vite Configuration Reference](https://vitejs.dev/config/).
-
-## Project Setup
-
-```sh
-npm install
-```
-
-### Compile and Hot-Reload for Development
-
-```sh
-npm run dev
-```
-
-### Compile and Minify for Production
-
-```sh
-npm run build
-```
-
-### Lint with [ESLint](https://eslint.org/)
-
-```sh
-npm run lint
+# カバレッジ測定込みでテストを実行
+npm run test:coverage
 ```

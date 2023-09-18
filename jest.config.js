@@ -6,5 +6,8 @@ module.exports = {
   transform: {
     '^.+\\.js$': 'babel-jest',
     '^.+\\.vue$': '@vue/vue3-jest'
-  }
+  },
+  moduleFileExtensions: ['js', 'vue'],
+  coverageProvider: 'v8',
+  collectCoverageFrom: ['src/**/*.{js,vue}']
 }

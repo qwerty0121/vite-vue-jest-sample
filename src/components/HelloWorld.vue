@@ -5,6 +5,7 @@ defineProps({
     required: true
   }
 })
+const envTest1 = import.meta.env.VITE_TEST1
 </script>
 
 <template>
@@ -15,6 +16,7 @@ defineProps({
       <a href="https://vitejs.dev/" target="_blank" rel="noopener">Vite</a> +
       <a href="https://vuejs.org/" target="_blank" rel="noopener">Vue 3</a>.
     </h3>
+    <p data-test="env-message">{{ envTest1 }}</p>
   </div>
 </template>
 
@@ -36,6 +38,7 @@ h3 {
 }
 
 @media (min-width: 1024px) {
+
   .greetings h1,
   .greetings h3 {
     text-align: left;

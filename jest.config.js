@@ -8,6 +8,9 @@ module.exports = {
     '^.+\\.vue$': '@vue/vue3-jest'
   },
   moduleFileExtensions: ['js', 'vue'],
+  moduleNameMapper: {
+    '^.+\\.svg': '<rootDir>/test/unit/module-stub.js'
+  },
   coverageProvider: 'v8',
   collectCoverageFrom: ['src/**/*.{js,vue}']
 }
